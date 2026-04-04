@@ -1,0 +1,124 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: #333;
+}
+
+body {
+    background-color: #dbdbdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tarjeta {
+    background-color: #fff;
+    max-width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    font-size: 20px;
+}
+
+.numeroTareas{
+   background-color: lightskyblue;
+   padding: 15px;
+   border-radius: 5px;
+   color: grey;
+ }
+
+.numero {
+    color: crimson;
+    font-weight: bold;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+}
+
+.tarea {
+    width: 300px;
+    height: 30px;
+    padding: 0px 10px;
+    margin: 5px;
+}
+
+
+.mensaje {
+   color: red;
+   padding: 0px 10px;
+   font-size: 12px;
+   font-weight: 600;
+}
+#errorTarea, #errorCategoria, #errorOtra {
+    display: none;
+}
+
+
+
+.agregarTarea {
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: lightskyblue;
+    color: crimson;
+    border: none;
+    border-radius: 4px;
+}
+
+.tarjetaTareas {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0px;
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.tarjetaTareas .botones {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.tarjetaTareas .botones  button {
+    background-color: #dbdbdb;
+    border: none;
+    border-radius: 15px;
+    padding: 4px 10px;
+}
+
+.categoria {
+    border: none;
+    border-radius: 15px;
+    background: #bac1c9;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 2px 10px;
+    margin-left: 10px;
+}
+
+#otra {
+    display: none;
+}
+
+.hecha {
+    background-color: rgb(33, 189, 103);
+}
+
+.hecha .textoTarea{
+    text-decoration: line-through;;
+}
+
+.urgente {
+    background-color: rgb(135, 160, 241);
+    border: 2px red solid;
+}

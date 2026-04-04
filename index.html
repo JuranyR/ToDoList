@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tarjeta">
+        <div class="titulo">
+            <h1>To Do List</h1>
+            <span class="icon">📝</span>
+        </div>
+        <p class="numeroTareas" id="numeroTareas"><span class="numero"  id="completadas">0</span> de <span class="numero" id="total">0</span> tareas completadas</p>
+        <div class="principal">
+            <input type="text" class="tarea" id="tarea" placeholder="Escriba su tarea" />
+            <span class="mensaje" id="errorTarea">Campo vacío*</span>
+            <select class="tarea" id="categoria" name="Seleccionar categoría">
+                <option value="categoría">Categoría</option>
+                <option value="📚 estudio">📚Estudio</option>
+                <option value="💼 trabajo">💼Trabajo</option>
+                <option value="🏠 personal">🏠Personal</option>
+                <option value="🔴 urgente">🔴Urgente</option>
+                <option value="otra">Otra</option>
+            </select>
+            <span class="mensaje" id="errorCategoria">Seleccione una categoría*</span>
+            <input class="tarea" id="otra" type="text" placeholder="Escriba su categoría"/>
+            <span class="mensaje" id="errorOtra">Campo vacío*</span>
+            <button class="agregarTarea" id="agregarTarea" type="submit">Agregar Tarea</button>
+        </div>
+        <div id="listaTareas">
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
