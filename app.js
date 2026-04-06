@@ -67,6 +67,8 @@ agregarTarea.addEventListener("click", function(){
         })
         listaTareas.append(nuevaTarjeta)
         total.innerText = listaTareas.children.length
+        tarea.value = ""
+        categoria.value="categoría" 
     }
 
 })
